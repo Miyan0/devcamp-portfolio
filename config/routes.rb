@@ -12,6 +12,12 @@ Rails.application.routes.draw do
   # endpoints can be name anything
   get 'asdfasdf', to: 'pages#contact'
 
-  resources :blogs
+  resources :blogs do
+    member do
+      get :toggle_status
+    end
+
+  end
+
   root to: 'pages#home'
 end
