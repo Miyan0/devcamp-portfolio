@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   resources :portfolios, except: [:show]
   # we still have to change our link_to in the index view:
   #   change portfolio_show to portfolio_show_path
-  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'angular-items', to: 'portfolios#angular'
+  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'

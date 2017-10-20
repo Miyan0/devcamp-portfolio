@@ -4,4 +4,10 @@ class ApplicationController < ActionController::Base
   # allow devise to whitelist our name field we added.
   include DeviseWhitelist # see concerns/devise_whitelist.rb
 
+  before_action :set_source
+
+  def set_source
+    session[:source] = params[:q] if params[:q]
+  end
+
 end
