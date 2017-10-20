@@ -14,4 +14,6 @@ class ApplicationController < ActionController::Base
   # null object pattern for current_user provided by devise
   include CurrentUserConcern # see concerns/current_user_concern.rb
 
+  # page title and other defaults
+  include DefaultPageContent
 end
