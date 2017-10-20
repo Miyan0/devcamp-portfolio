@@ -3,11 +3,14 @@ class ApplicationController < ActionController::Base
 
   # allow devise to whitelist our name field we added.
   include DeviseWhitelist # see concerns/devise_whitelist.rb
+  
 
-  before_action :set_source
-
-  def set_source
-    session[:source] = params[:q] if params[:q]
-  end
+  # track where user is coming from (twitter, facebook etc)
+  # this works by using a special url we send on social media that
+  # when clicked includes a query parameter we're gonna track
+  # ex:
+  #     mycompany.com/about/?q=twitter
+  include SetSource # see concerns/set_source
+  
 
 end
