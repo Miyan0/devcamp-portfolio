@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   # custom routing here (portfolio singular for show) 
   resources :portfolios, except: [:show]
   # we still have to change our link_to in the index view:
