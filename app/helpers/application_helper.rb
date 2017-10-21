@@ -8,4 +8,18 @@ module ApplicationHelper
       (link_to "Login", new_user_session_path)
      end 
   end
+
+  # to test this,
+  # open an incongnito window and add a ?q=xxx to the url
+  # ex: localhost:3000/?q=facebook
+  # this is used in:
+  #   layout/blog.html.erb
+  #   layout/portfolio.html.erb
+  #   layout/application.html.erb
+  def source_helper(layout_name)
+    if session[:source]
+      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout."
+      content_tag(:p, greeting, class: "source-greeting")
+    end
+  end
 end
