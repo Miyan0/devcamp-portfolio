@@ -21,3 +21,6 @@
 # don't want to show my secrets
 /config/secrets.yml
 
+# jetbrains files
+/.idea
+
