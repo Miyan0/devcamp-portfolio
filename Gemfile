@@ -60,3 +60,6 @@ gem 'devise', '~> 4.3'
 # bootstrap
 gem 'bootstrap', '~> 4.0.0.beta2'
 gem 'jquery-rails'
+
+# my gem
+gem 'miyan0_view_tool', git: 'https://github.com/Miyan0/miyan0_view_tool'

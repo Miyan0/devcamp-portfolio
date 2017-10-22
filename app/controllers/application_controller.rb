@@ -16,4 +16,5 @@ class ApplicationController < ActionController::Base
 
   # page title and other defaults
   include DefaultPageContent
+
 end

@@ -22,4 +22,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    Miyan0ViewTool::Renderer.copyright 'Andre Masse', 'All rights reserved'
+  end
 end
