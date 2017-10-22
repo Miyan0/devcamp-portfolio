@@ -63,3 +63,6 @@ gem 'jquery-rails'
 
 # my gem
 gem 'miyan0_view_tool', git: 'https://github.com/Miyan0/miyan0_view_tool'
+
+# authorization
+gem 'petergate', '~> 1.8'
