@@ -24,6 +24,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    Miyan0ViewTool::Renderer.copyright 'Andre Masse', 'All rights reserved'
+    Miyan0ViewTool::Renderer.copyright 'Mazzdev', 'All rights reserved'
   end
 end
