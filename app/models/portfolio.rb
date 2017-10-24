@@ -10,11 +10,15 @@ class Portfolio < ApplicationRecord
 
   # 1 way
   def self.angular
-    where(subtitle: "Angular")
+    where(subtitle: 'Angular')
+  end
+
+  def self.by_position
+    order('position ASC')
   end
 
   # other way
-  scope :ruby_on_rails_porfolio_items, -> { where(subtitle: "Ruby on Rails") }
+  scope :ruby_on_rails_porfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 
   after_initialize :set_defaults
 
