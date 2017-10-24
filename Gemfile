@@ -66,3 +66,10 @@ gem 'miyan0_view_tool', git: 'https://github.com/Miyan0/miyan0_view_tool'
 
 # authorization
 gem 'petergate', '~> 1.8'
+
+# font-awesome
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
+# kaminari (pagination for rails)
+# https://rails.devcamp.com/ruby-gem-walkthroughs/view-template-tools/kaminari-pagination-example
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
