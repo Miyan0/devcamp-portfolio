@@ -20,7 +20,7 @@
 
 # don't want to show my secrets
 /config/secrets.yml
-
+.env
 # jetbrains files
 /.idea
 
@@ -28,3 +28,6 @@
 
 app/assets/images/me.jpg
 app/assets/images/vladstudio_frog_1600x1200.jpg
+/public/uploads/*
+public/uploads/tmp/
+
