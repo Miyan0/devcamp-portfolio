@@ -73,3 +73,6 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 # kaminari (pagination for rails)
 # https://rails.devcamp.com/ruby-gem-walkthroughs/view-template-tools/kaminari-pagination-example
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+
+# jquery ui
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
