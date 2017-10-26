@@ -9,7 +9,10 @@ Rails.application.routes.draw do
   # we still have to change our link_to in the index view:
   #   change portfolio_show to portfolio_show_path
   get 'angular-items', to: 'portfolios#angular'
-  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
+
+  # modifie ca parce que gossant d'avoir au singulier pour l'edit seulement.
+  # get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
+  get 'portfolios/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
