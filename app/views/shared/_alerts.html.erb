@@ -1,7 +1,0 @@
-<% if flash[:alert] %>
-    <%= js add_gritter(flash[:alert], title: 'This is the title for an alert', sticky: false) %>
-<% elsif flash[:error] %>
-    <%= js add_gritter(flash[:error], title: 'This is the title for and error', sticky: false) %>
-<% else %>
-    <%= js add_gritter(flash[:notice], title: 'This is the title for a notification', sticky: false) %>
-<% end %>
