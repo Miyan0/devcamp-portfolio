@@ -51,37 +51,37 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+
+###########################################################################################################
+#   PROJECT GEMS
+###########################################################################################################
+
+
 # slugs
 gem 'friendly_id', '~> 5.1.0'
-
 # authentication
 gem 'devise', '~> 4.3'
-
 # bootstrap
 gem 'bootstrap', '~> 4.0.0.beta2'
 gem 'jquery-rails'
-
 # my gem
 gem 'miyan0_view_tool', git: 'https://github.com/Miyan0/miyan0_view_tool'
-
 # authorization
 gem 'petergate', '~> 1.8'
-
 # font-awesome
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
-
 # kaminari (pagination for rails)
 # https://rails.devcamp.com/ruby-gem-walkthroughs/view-template-tools/kaminari-pagination-example
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
-
 # jquery ui
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
-
 # image uploading
 gem 'carrierwave', '~> 1.2', '>= 1.2.1'
 gem 'mini_magick', '~> 4.8'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
-
 # nested form handling using JQuery
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
+# Growl like notification
+gem 'gritter', '~> 1.2'
