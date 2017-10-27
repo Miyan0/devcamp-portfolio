@@ -27,5 +27,10 @@ module DevcampPortfolio
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # rail course "Working with lib" section
+    # https://www.udemy.com/professional-rails-5-development-course/learn/v4/t/lecture/6429584?start=0
+    # enable lib directory module loading
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end

@@ -85,3 +85,5 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
 # Growl like notification
 gem 'gritter', '~> 1.2'
+
+gem 'twitter', '~> 6.1'
