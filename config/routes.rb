@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'tech-news', to: 'pages#tech_news'
 
   # endpoints can be name anything
   get 'asdfasdf', to: 'pages#contact'
