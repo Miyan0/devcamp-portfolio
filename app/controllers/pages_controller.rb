@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def about
+     @skills = Skill.all.order('percent_utilized DESC')
   end
 
   def contact
