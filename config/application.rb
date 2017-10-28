@@ -32,5 +32,6 @@ module DevcampPortfolio
     # https://www.udemy.com/professional-rails-5-development-course/learn/v4/t/lecture/6429584?start=0
     # enable lib directory module loading
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
   end
 end
