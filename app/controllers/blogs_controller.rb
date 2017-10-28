@@ -14,7 +14,7 @@ class BlogsController < ApplicationController
       @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
 
-    @page_title = 'My Portfolio | Blog'
+    @page_title = 'Our Portfolio | Blog'
   end
 
   # GET /blogs/1
