@@ -1,9 +1,12 @@
-<div class="blog-masthead">
-  <div class="container">
-    <nav class="nav">
-      <%= nav_helper('nav-link', 'span') %>
-      <%= login_helper 'nav-link' %>
-
-    </nav>
+<nav class="navbar navbar-expand-md navbar-dark blog-nav" style="background-color:#563d7c;">
+  <%= link_to "Mazzdev", root_path, class: 'navbar-brand' %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <%= nav_helper 'nav-link', 'li' %>
+    </ul>
+    <%= login_helper 'nav-link' %>
   </div>
-</div>
+</nav>
